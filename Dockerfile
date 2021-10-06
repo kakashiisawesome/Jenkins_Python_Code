@@ -12,13 +12,13 @@ WORKDIR /home/worker
 
 
 
-RUN pip install --user pipenv
+RUN pip install pipenv
 
 
 ENV PATH="/home/worker/.local/bin:${PATH}"
 
 # COPY --chown=worker:worker Pipfile Pipfile
-RUN pip install --user nose
+RUN pip install nose
 
 
 COPY --chown=worker:worker . .
