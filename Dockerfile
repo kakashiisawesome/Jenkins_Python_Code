@@ -12,8 +12,8 @@ WORKDIR /home/worker
 
 
 
-RUN pip install --user pipenv
-RUN pip install --user nose
+RUN pip install pipenv
+RUN pip install nose
 
 ENV PATH="/home/worker/.local/bin:${PATH}"
 
