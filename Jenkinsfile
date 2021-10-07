@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'pip list'
+                // sh 'pip list'
                 // sh 'python -m nose --verbosity=2'
-                // sh 'nosetests verbosity=2'
+                sh 'nosetests verbosity=2'
             }
         }
     }
